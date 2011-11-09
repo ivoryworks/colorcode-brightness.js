@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <script type="text/javascript" src="./colorcode-brightness.js"></script>
+    <script type= "text/javascript">
+        onload = function() {
+            var case0Base = '#FF0000';
+            var case0b = document.getElementById('case0b');
+            case0b.style.color = case0Base;
+            case0b.innerHTML += case0Base;
+            var case0Dark = ctrlBrightness(case0Base, -150);
+            case0d.style.color = case0Dark;
+            case0d.innerHTML += case0Dark;
+            var case0Light = ctrlBrightness(case0Base, 150);
+            case0l.style.color = case0Light;
+            case0l.innerHTML += case0Light;
+
+            var case1Base = '#00FF00';
+            var case1b = document.getElementById('case1b');
+            case1b.style.color = case1Base;
+            case1b.innerHTML += case1Base;
+            var case1Dark = ctrlBrightness(case1Base, -150);
+            case1d.style.color = case1Dark;
+            case1d.innerHTML += case1Dark;
+            var case1Light = ctrlBrightness(case1Base, 150);
+            case1l.style.color = case1Light;
+            case1l.innerHTML += case1Light;
+
+            var case2Base = '#0000FF';
+            var case2b = document.getElementById('case2b');
+            case2b.style.color = case2Base;
+            case2b.innerHTML += case2Base;
+            var case2Dark = ctrlBrightness(case2Base, -150);
+            case2d.style.color = case2Dark;
+            case2d.innerHTML += case2Dark;
+            var case2Light = ctrlBrightness(case2Base, 150);
+            case2l.style.color = case2Light;
+            case2l.innerHTML += case2Light;
+
+            var case3Base = '#336699';
+            var case3b = document.getElementById('case3b');
+            case3b.style.color = case3Base;
+            case3b.innerHTML += case3Base;
+            var case3Dark = ctrlBrightness(case3Base, -150);
+            case3d.style.color = case3Dark;
+            case3d.innerHTML += case3Dark;
+            var case3Light = ctrlBrightness(case3Base, 150);
+            case3l.style.color = case3Light;
+            case3l.innerHTML += case3Light;
+        }
+    </script>
+    <style type="text/css">
+        span {
+            font-weight: bold;
+            margin:10px;
+        }
+        div {margin:15px;}
+    </style>
+</head>
+<body>
+<h1>colorcode-brightness.js</h1>
+<div>
+    <span id="case0d">Dark </span>-150<span id="case0b">Base </span>+150<span id="case0l">Light </span>
+</div>
+<div>
+    <span id="case1d">Dark </span>-150<span id="case1b">Base </span>+150<span id="case1l">Light </span>
+</div>
+<div>
+    <span id="case2d">Dark </span>-150<span id="case2b">Base </span>+150<span id="case2l">Light </span>
+</div>
+<div>
+    <span id="case3d">Dark </span>-150<span id="case3b">Base </span>+150<span id="case3l">Light </span>
+</div>
+</body>
+</html>
